@@ -275,7 +275,7 @@ Public Class RentalForm
         RentalFormToolTip.SetToolTip(ExitButton, "Allows the user to exit the program.")
     End Sub
 
-    Private Sub CalculateButton_Click(sender As Object, e As EventArgs) Handles CalculateButton.Click
+    Private Sub CalculateButton_Click(sender As Object, e As EventArgs) Handles CalculateButton.Click, CalculateToolStripMenuItem.Click
         'Declaring variables
         Dim beginOdometer, endOdometer, day, dayCharge As Integer
         Dim mileage, mileageCost, discount, totalCost As Double
@@ -340,7 +340,7 @@ Public Class RentalForm
 
     End Sub
 
-    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
+    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click, ClearToolStripMenuItem1.Click
         'Clear input text boxes
         NameTextBox.Focus()
         NameTextBox.Text = ""
@@ -366,7 +366,7 @@ Public Class RentalForm
 
     End Sub
 
-    Private Sub SummaryButton_Click(sender As Object, e As EventArgs) Handles SummaryButton.Click
+    Private Sub SummaryButton_Click(sender As Object, e As EventArgs) Handles SummaryButton.Click, SummaryToolStripMenuItem1.Click
 
         'Declaring variables
         Dim totalsArray(2), displayString As String
@@ -384,7 +384,7 @@ Public Class RentalForm
 
     End Sub
 
-    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click, ExitToolStripMenuItem1.Click
 
         'If the user presses the exit button, the program verifies that the user wants to quit via a
         'Message box with yes and no buttons. If the user clicks yes, the program will close.
